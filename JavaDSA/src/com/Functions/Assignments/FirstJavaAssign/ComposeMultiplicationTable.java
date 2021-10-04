@@ -8,7 +8,7 @@ public class ComposeMultiplicationTable
     {
         System.out.println();
         System.out.println(num+"th Table");
-        for (int i = 1 ; i <= 15 ; i++) {
+        for (int i = 1 ; i <= 20 ; i++) {
             int n = num*i;
             System.out.println(num+" x "+i+" = "+n);
         }
