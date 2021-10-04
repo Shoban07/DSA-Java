@@ -4,6 +4,10 @@ import java.util.Scanner;
 
 public class FirstArray
 {
+    /*
+    * Git Assignment Board Link: https://github.com/kunal-kushwaha/DSA-Bootcamp-Java/blob/main/assignments/05-arrays.md
+    * YT Link: https://www.youtube.com/watch?v=n60Dn0UsbEk
+    * */
     public static void main(String[] args) {
 
         int[] arr = {10,20,30,40};
