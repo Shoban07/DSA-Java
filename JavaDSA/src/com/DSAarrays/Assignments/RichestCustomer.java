@@ -20,9 +20,42 @@ Both customers are considered the richest with a wealth of 6 each, so return 6.
 
 public class RichestCustomer
 {
-    public int maximumWealth(int[][] accounts)
+    public static int maximumWealth(int[][] accounts)
     {
-        int res = 0;
-        return  res;
+         /*int res = 0;
+         int maxSoFar = 0;
+        int[] resarray = new int[accounts.length];
+        for (int i = 0; i < accounts.length; i++)
+        {
+            int sumof1dArray = 0;
+            for (int j = 0; j < accounts[i].length; j++)
+            {
+                sumof1dArray += accounts[i][j];
+            }
+            resarray[i] = sumof1dArray;
+        }
+
+        for (int i= 0;i<resarray.length;i++)
+        {
+            maxSoFar = Math.max(resarray[i],maxSoFar);
+        }
+        //res = Math.max()
+        return  maxSoFar;*/
+        int maxWealth = Integer.MIN_VALUE;
+        for (int[] account:accounts)
+        {
+            int currentWealth = 0;
+            for (int money: account)
+            {
+                    currentWealth+=money;
+            }
+            maxWealth = Math.max(currentWealth,maxWealth);
+        }
+        return maxWealth;
+    }
+
+    public static void main(String[] args) {
+        int[][] arr= {{1,2},{1}};
+        System.out.println(maximumWealth(arr));
     }
 }
