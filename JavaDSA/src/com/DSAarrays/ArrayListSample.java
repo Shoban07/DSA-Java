@@ -2,20 +2,29 @@ package com.DSAarrays;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Scanner;
 
 public class ArrayListSample
 {
     public static void main(String[] args) {
-        ArrayList list = new ArrayList();
-        list.add("Sample");
-        list.add(1);
-        list.add(true);
-        list.add(1.1);
-        list.add(1.001);
-
-        System.out.println(Arrays.toString(list.toArray()));
-        list.set(2,false);
-        list.remove(4);
-        System.out.println(list);
+        int initialCap = 5;
+        Scanner in = new Scanner(System.in);
+        ArrayList<Integer> intList = new ArrayList<>(initialCap);
+        //System.out.println(intList.size());
+        for(int i=0;i<initialCap;i++)
+        {
+            intList.add(in.nextInt());
+        }
+        for(int i=0;i<initialCap;i++)
+        {
+            System.out.print(intList.get(i)+", ");
+        }
+        System.out.println();
+        for (int num: intList)
+        {
+            System.out.print(num+",");
+        }
+        System.out.println();
+        System.out.println(intList);
     }
 }

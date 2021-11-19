@@ -20,7 +20,7 @@ public class TwoDimensionalArray
       //As each item inside the Multi Dimensional Array is an array inside an array
 
       //Construct a 3 x 3 array
-      int[][] arr = new int[3][3]; //declaration
+      int[][] arr = new int[3][4]; //declaration
         int[] arr1 = {1,2,3};
         //initialization
         //here each index in a multi d array consist of an array hence as follows
