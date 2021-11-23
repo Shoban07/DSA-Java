@@ -1,6 +1,5 @@
 package com.DSAarrays;
 
-import java.lang.reflect.Array;
 import java.util.Arrays;
 
 public class ArraysSampleTask
@@ -46,15 +45,15 @@ public class ArraysSampleTask
     //maximum element of an array
     static int max(int[] arr)
     {
-        int maxsoFar = arr[0];
+        int maxFar = arr[0];
         for(int i =1;i<arr.length;i++)
         {
-            if (maxsoFar<arr[i])
+            if (maxFar<arr[i])
             {
-                maxsoFar = arr[i];
+                maxFar = arr[i];
             }
         }
-        return maxsoFar;
+        return maxFar;
     }
 
     //finding maximum element in an array within given range
