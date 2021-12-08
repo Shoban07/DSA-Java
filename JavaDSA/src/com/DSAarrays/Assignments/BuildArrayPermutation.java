@@ -22,6 +22,18 @@ public class BuildArrayPermutation
         }
         return resultArray;
     }
+
+    public static int[] recursiveWay(int[] nums)
+    {
+        int[] resArray = new int[nums.length];
+        int index = 0;
+        if(index<nums.length)
+        {
+            resArray[index] = nums[nums[index]];
+            index++;
+        }
+        return  resArray;
+    }
     public static void main(String[] args)
     {
         int[] arr = {4,5,0,1,2,3};
