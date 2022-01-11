@@ -9,9 +9,9 @@ public class LinearSearchIntro
         Scanner input = new Scanner(System.in);
         int[] arr = {13,67, 89 ,92, 46, 0};
         int target = input.nextInt();
-        int ans = LinearSearch1(arr,target);
-        int ans2 = LinearSearch2(arr,target);
-        boolean ans3 = LinearSearch3(arr,target);
+        int ans = LinearSearch1(arr,target); //returns the index of target element
+        int ans2 = LinearSearch2(arr,target); // returns the elemen t itself
+        boolean ans3 = LinearSearch3(arr,target); // returns boolean value based on the presence of target element
         System.out.println(ans);
         System.out.println(ans2);
         System.out.println(ans3);
