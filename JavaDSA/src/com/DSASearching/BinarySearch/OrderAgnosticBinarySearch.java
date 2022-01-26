@@ -15,7 +15,7 @@ public class OrderAgnosticBinarySearch
         boolean isAscending2 = arr2[0] < arr2[arr2.length-1];
         System.out.println(orderAgnosticBs(arr2,target2,isAscending2)+ " is the element index for ascending array");
     }
-    static int orderAgnosticBs(int[] arr, int target, boolean isAscending)
+    public static int orderAgnosticBs(int[] arr, int target, boolean isAscending)
     {
         int start = 0;
         int end = arr.length-1;
