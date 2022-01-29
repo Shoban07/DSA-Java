@@ -13,7 +13,7 @@ public class GuessNumberHorL
      * int guess(int num);
      */
     public static void main(String[] args) {
-
+        System.out.println(Integer.MAX_VALUE);
     }
     public static int guess(int mid)
     {
