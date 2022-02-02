@@ -29,10 +29,10 @@ public class BubbleSort
         //Flag counter for making sure if there is any comparison
         boolean flag = false;
         //Passes
-        for(int i = 0;i<arr.length;i++)
+        for(int i = 0;i<arr.length-1;i++)
         {
             //Comparisons
-            for(int j = 1; j<arr.length-i;j++) // to avoid the sorted elements comparison we are neglecting them based on the passes count
+            for(int j = 1; j<arr.length-1-i;j++) // to avoid the sorted elements comparison we are neglecting them based on the passes count
             {
                 if(arr[j]<arr[j-1])
                 {
