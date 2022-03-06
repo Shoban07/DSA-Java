@@ -19,7 +19,7 @@ import java.util.Arrays;
 public class BubbleSort
 {
     public static void main(String[] args) {
-        int[] arr = {0,1,-9,200,-450};
+        int[] arr = {1,2,2,1};
         bubbleSorting(arr);
         System.out.println(Arrays.toString(arr));
     }
@@ -32,7 +32,7 @@ public class BubbleSort
         for(int i = 0;i<arr.length-1;i++)
         {
             //Comparisons
-            for(int j = 1; j<arr.length-1-i;j++) // to avoid the sorted elements comparison we are neglecting them based on the passes count
+            for(int j = 1; j<=arr.length-1;j++) // to avoid the sorted elements comparison we are neglecting them based on the passes count
             {
                 if(arr[j]<arr[j-1])
                 {
