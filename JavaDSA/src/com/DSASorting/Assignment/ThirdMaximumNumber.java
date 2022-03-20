@@ -2,6 +2,8 @@ package com.DSASorting.Assignment;
 
 import com.DSASorting.Algos.InsertionSort;
 
+import java.util.Arrays;
+
 /**
  * Problem: Third Maximum Number
  * Link: https://leetcode.com/problems/third-maximum-number/
@@ -14,6 +16,7 @@ public class ThirdMaximumNumber
     {
         int[] arr = {0,5,2,4,6,3,1};
         System.out.println(thirdMaxAlt(arr));
+        int num = 2;
     }
     public static int thirdMax(int[] nums)
     {
