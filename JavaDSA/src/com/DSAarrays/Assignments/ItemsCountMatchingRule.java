@@ -28,7 +28,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-public class ItemsCountMatchingRule {
+public class    ItemsCountMatchingRule {
     public static void main(String[] args) {
         ArrayList<ArrayList<String>> list = new ArrayList<>();
         ArrayList<String> array1 = new ArrayList<>();
