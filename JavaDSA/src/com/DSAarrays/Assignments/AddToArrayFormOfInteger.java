@@ -9,7 +9,7 @@ public class AddToArrayFormOfInteger
 {
     public static void main(String[] args) {
         //int[] array= {1,2,6,3,0,7,1,7,1,9,7,5,6,6,4,4,0,0,6,3}; int k = 516;
-        int[] array = {1,2,0,0}; int k = 34;
+        int[] array = {1,2,9,9}; int k = 1;
 //        System.out.println(Arrays.toString(new List[]{addToArrayForm(array, k)}));
         System.out.println(Arrays.toString(addToArrayForm2(array,k).toArray()));
     }
