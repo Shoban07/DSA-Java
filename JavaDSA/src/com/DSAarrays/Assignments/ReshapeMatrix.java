@@ -12,6 +12,9 @@ public class ReshapeMatrix
         int r = 2; int c = 4;
         System.out.println(Arrays.toString(Reshape(array,r,c)));
     }
+    ////Time and space complexity
+    //    //Time : O(m * n) -> [Since we need to traverse the whole matrix]
+    //    //Space : O(1) -> if output array was not considered as space, the o(1).
     public static int[][] Reshape(int[][] mat, int r, int c)
     {
         if(mat.length == r && mat[0].length == c)
