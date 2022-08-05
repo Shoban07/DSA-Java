@@ -5,8 +5,8 @@ package com.DSAarrays.Assignments;
 
 public class JumpGame_I {
     public static void main(String[] args) {
-        int[] nums = {0,1};
-        System.out.println(canJumpGreedy(nums));
+        int[] nums = {1,2,1,0,4};
+        System.out.println(canJumpEffectively(nums));
     }
 
     public static boolean canJump(int[] nums) {
