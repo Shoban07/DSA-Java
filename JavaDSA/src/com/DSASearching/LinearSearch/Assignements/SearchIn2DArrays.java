@@ -12,6 +12,8 @@ public class SearchIn2DArrays
         System.out.println(Arrays.toString(SearchIn2DArray(arr,10)));
         System.out.println("Minimum in 2D Arrays :");
         System.out.println(MinimumIn2DArray(arr));
+        System.out.println("Maximum in 2D Arrays :");
+        System.out.println(MaximumIn2DArray(arr));
     }
     public static int[] SearchIn2DArray(int[][] arr, int target)
     {
@@ -49,5 +51,27 @@ public class SearchIn2DArrays
         }
 
         return  minSoFar;
+    }
+
+    public static int MaximumIn2DArray(int[][] array)
+    {
+        int x = 0;
+        int y = 0;
+
+        if(array.length == 0)
+            return array[x][y];
+
+        for(int i = 0; i< array.length;i++)
+        {
+            for (int j = 1; j<array[i].length; j++)
+            {
+                if(array[i][j] > array[x][y])
+                {
+                    x=i;
+                    y=j;
+                }
+            }
+        }
+        return array[x][y];
     }
 }

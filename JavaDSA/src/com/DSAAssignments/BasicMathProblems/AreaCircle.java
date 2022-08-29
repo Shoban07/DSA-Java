@@ -31,4 +31,8 @@ public class AreaCircle
         }
 
     }
+    public double areaCircle(double radius)
+    {
+        return 3.14*radius*radius;
+    }
 }

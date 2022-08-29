@@ -6,64 +6,61 @@ public class LinearSearchIntro
 {
     public static void main(String[] args)
     {
-        Scanner input = new Scanner(System.in);
-        int[] arr = {13,67, 89 ,92, 46, 0};
-        int target = input.nextInt();
-        int ans = LinearSearch1(arr,target); //returns the index of target element
-        int ans2 = LinearSearch2(arr,target); // returns the elemen t itself
-        boolean ans3 = LinearSearch3(arr,target); // returns boolean value based on the presence of target element
-        System.out.println(ans);
-        System.out.println(ans2);
-        System.out.println(ans3);
+        int[] array = {2,4,932,17,912,9,10};
+        LinearSearchIntro ls = new LinearSearchIntro();
+        System.out.println("Find index of item 10: "+ls.linearSearch(array,10));
+        System.out.println("Find the element in index 4: "+ls.linearSearchElement(array,4));
+        System.out.println("Check whether element 11 is present or not: "+ ls.linearSearchContainsElement(array,11));
     }
     //returns the index
-    public static int LinearSearch1(int[] arr, int target)
+    public int linearSearch(int[] array, int item)
     {
-        if(arr.length==0)
+        if(array.length == 0)
         {
-            return  -1;
+            return -1;
         }
-        for(int index = 0;index<arr.length;index++)
+
+        for(int i = 0; i<array.length; i++)
         {
-            if(arr[index]==target)
+            if(array[i] == item)
             {
-                return index;
+                return i;
             }
         }
-        //if element not found
         return -1;
     }
-    //returns the element
-    public static int LinearSearch2(int[] arr, int target)
+
+    //returns element itself
+    public int linearSearchElement(int[] array, int index)
     {
-        if(arr.length==0)
+        if(array.length == 0)
         {
-            return  -1;
+            return Integer.MAX_VALUE;
         }
-        for(int index = 0;index<arr.length;index++)
+
+        for(int i = 0; i<array.length;i++)
         {
-            if(arr[index]==target)
-            {
-                return arr[index];
-            }
+            if(i == index)
+                return array[i];
         }
-        //if element not found
+
         return Integer.MAX_VALUE;
     }
-    public static boolean LinearSearch3(int[] arr,int target)
+
+    //returns true if element present and vice versa
+    public boolean linearSearchContainsElement(int[] array, int item)
     {
-        if(arr.length==0)
+        if(array.length == 0)
         {
             return false;
         }
-        for(int index = 0;index<arr.length;index++)
+
+        for(int i = 0; i<array.length; i++)
         {
-            if(arr[index]==target)
-            {
+            if(array[i] == item)
                 return true;
-            }
         }
-        //if element not found
         return false;
     }
+
 }
