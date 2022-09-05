@@ -9,7 +9,7 @@ public class FirstAndLastPositionInSortedArray
     public static void main(String[] args)
     {
         int[] arr = {5,6,7,6,6,8,9};
-        int target = 7;
+        int target = 6;
         System.out.println(Arrays.toString(searchInRange(arr,target)));
     }
     public static int[] searchInRange(int[] nums, int target)
