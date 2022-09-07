@@ -6,9 +6,9 @@ package com.DSASearching.BinarySearch.Assignments;
 public class RotatedSortedArray
 {
     public static void main(String[] args) {
-        int[] arr = {1,1,1,1,1,1,1,1,1,1,1,1,1,2,1,1,1,1,1};
-        boolean isPresent = search(arr,2)!=-1;
-        System.out.println(search(arr,2)+" "+isPresent);
+        int[] arr = {1,2,3};
+        int target = 2;
+        System.out.println(target+" Present in index " +search(arr,target));
 
     }
     public static int search(int[] arr, int target)
