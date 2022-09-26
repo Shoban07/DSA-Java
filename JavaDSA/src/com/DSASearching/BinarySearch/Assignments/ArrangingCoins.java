@@ -5,7 +5,12 @@ public class ArrangingCoins
 {
     public static void main(String[] args)
     {
-        int coinsCount = 9;
+        String name = "shoban";
+        for (char ch:name.toCharArray())
+        {
+
+        }
+        int coinsCount = 2;
         System.out.println("Maximum filled staircase :"+arrangeCoins(coinsCount));
     }
     public static int arrangeCoins(int n)
@@ -36,8 +41,10 @@ public class ArrangingCoins
         //if capacity <= coins then maximum filled staircase was either any of the pointer(start/end/mid)
         if((end*(end+1)/2)<=n)
             return (int)end;
-        //else if capacity>coins then the maximum filled staircase will be the previous staircase from current pointer. Because the current staircase (start/end/mid)
-        //was not completely filled with the coins. Hence the previous staircase was the completely filled one.
+//        else if capacity>coins then the maximum filled staircase will be the previous staircase from current pointer.
+//        Because the current staircase (start/end/mid)
+//        was not completely filled with the coins.
+//        Hence, the previous staircase was the completely filled one.
         else return (int)end-1;
     }
 }
